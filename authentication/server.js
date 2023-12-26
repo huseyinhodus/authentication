@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 // MongoDB Atlas bağlantı dizesi
-const mongoURI = 'mongodb+srv://<kullaniciAdi>:<sifre>@<clusterAdi>/<veritabaniAdi>?retryWrites=true&w=majority';
+const mongoURI = 'mongodb+srv://dijitalfikirtodo:<123qwe123>@dbcluster1.klchy1y.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -32,5 +32,5 @@ app.post('/login', async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
+  console.log(`Çalışıyor`);
 });
